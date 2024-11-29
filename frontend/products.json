@@ -1,0 +1,217 @@
+[{
+        "id": 1,
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "price": 12.99,
+        "description": "A classic novel of the Jazz Age, exploring themes of decadence, idealism, and the American Dream.",
+        "image": "images/book1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "price": 14.99,
+        "description": "A powerful story of racial injustice and loss of innocence in the American South.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "1984",
+        "author": "George Orwell",
+        "price": 11.99,
+        "description": "A dystopian novel set in a totalitarian society, exploring themes of mass surveillance and censorship.",
+        "image": "images/book3.webp"
+    },
+    {
+        "id": 4,
+        "name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "price": 9.99,
+        "description": "A romantic novel of manners, following the character development of Elizabeth Bennet.",
+        "image": "images/book4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "price": 13.99,
+        "description": "A controversial novel that explores themes of alienation and angst in adolescence.",
+        "image": "images/book5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "ok boss",
+        "author": "J.D. Salinger",
+        "price": 13.99,
+        "description": "A controversial novel that explores themes of alienation and angst in adolescence.",
+        "image": "images/book6.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Moby Dick",
+        "author": "Herman Melville",
+        "price": 15.99,
+        "description": "An epic tale of obsession and revenge, following Captain Ahab's hunt for the white whale, Moby Dick.",
+        "image": "images/book7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "War and Peace",
+        "author": "Leo Tolstoy",
+        "price": 19.99,
+        "description": "A historical novel that delves into the lives of families during the Napoleonic Wars.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "The Odyssey",
+        "author": "Homer",
+        "price": 11.49,
+        "description": "An ancient Greek epic poem telling the story of Odysseus's journey home after the Trojan War.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "Brave New World",
+        "author": "Aldous Huxley",
+        "price": 13.49,
+        "description": "A dystopian novel set in a future society driven by technology, control, and engineered happiness.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "The Iliad",
+        "author": "Homer",
+        "price": 12.99,
+        "description": "An ancient Greek epic about the Trojan War and the hero Achilles.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "Great Expectations",
+        "author": "Charles Dickens",
+        "price": 10.99,
+        "description": "A coming-of-age story that follows the life of an orphan named Pip.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "price": 14.99,
+        "description": "A philosophical novel that delves into the mind of a man who commits a crime and grapples with guilt.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 14,
+        "name": "Wuthering Heights",
+        "author": "Emily Brontë",
+        "price": 12.49,
+        "description": "A gothic novel about the intense, tragic love between Heathcliff and Catherine Earnshaw.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 15,
+        "name": "The Scarlet Letter",
+        "author": "Nathaniel Hawthorne",
+        "price": 9.99,
+        "description": "A novel about sin and redemption in Puritan New England, centered on the life of Hester Prynne.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 16,
+        "name": "Frankenstein",
+        "author": "Mary Shelley",
+        "price": 11.99,
+        "description": "A gothic novel about a scientist's creation of a sentient creature and the consequences of playing with life.",
+        "image": "images/book2.jpeg"
+    },
+    {
+        "id": 27,
+        "name": "Frankenstein",
+        "author": "Mary Shelley",
+        "price": 11.99,
+        "description": "A gothic novel about a scientist's creation of a sentient creature and the consequences of playing with life.",
+        "image": "images/1001.png"
+    },
+    {
+        "id": 17,
+        "name": "Dracula",
+        "author": "Bram Stoker",
+        "price": 12.50,
+        "description": "A tale of a vampire count and his attempts to spread the undead curse across England.",
+        "image": "images/1002.png"
+    },
+    {
+        "id": 18,
+        "name": "Moby-Dick",
+        "author": "Herman Melville",
+        "price": 13.45,
+        "description": "The story of Captain Ahab's obsessive quest to hunt the white whale, Moby-Dick.",
+        "image": "images/1003.png"
+    },
+    {
+        "id": 19,
+        "name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "price": 10.99,
+        "description": "A classic romance about Elizabeth Bennet and her complex relationship with Mr. Darcy.",
+        "image": "images/1004.png"
+    },
+    {
+        "id": 20,
+        "name": "1984",
+        "author": "George Orwell",
+        "price": 14.00,
+        "description": "A dystopian novel exploring the dangers of totalitarianism and the loss of individual freedom.",
+        "image": "images/1005.png"
+    },
+    {
+        "id": 21,
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "price": 9.99,
+        "description": "A poignant story of racial injustice in the American South, seen through the eyes of a young girl.",
+        "image": "images/1006.png"
+    },
+    {
+        "id": 22,
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "price": 12.75,
+        "description": "The story of Holden Caulfield, a troubled teenager navigating the complexities of adulthood.",
+        "image": "images/1007.png"
+    },
+    {
+        "id": 23,
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "price": 15.00,
+        "description": "A novel about the American dream and the pursuit of wealth and love during the Jazz Age.",
+        "image": "images/1008.png"
+    },
+    {
+        "id": 24,
+        "name": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "price": 10.50,
+        "description": "A fantasy novel that follows Bilbo Baggins on his journey to recover treasure guarded by the dragon Smaug.",
+        "image": "images/1009.png"
+    },
+    {
+        "id": 25,
+        "name": "War and Peace",
+        "author": "Leo Tolstoy",
+        "price": 19.99,
+        "description": "A historical epic set during the Napoleonic Wars, exploring Russian society and personal relationships.",
+        "image": "images/1010.png"
+    },
+    {
+        "id": 26,
+        "name": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "price": 13.25,
+        "description": "A philosophical novel about the moral dilemmas faced by a young man who commits a murder.",
+        "image": "images/1011.png"
+    }
+]

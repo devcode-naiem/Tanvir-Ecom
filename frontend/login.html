@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <style>
+      /* Add your CSS here */
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .form-container {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .form-group input:focus {
+        border-color: #007bff;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .submit-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h2>Log In</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+    </div>
+
+    <script>
+      const form = document.getElementById("loginForm");
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        // Collect form data
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Send POST request to the server
+        try {
+          const response = await fetch("http://localhost:8080/api/auth/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email,
+              password,
+            }),
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            // Store user information in localStorage
+            localStorage.setItem("user", JSON.stringify(result.user));
+
+            // Manually set the token in a cookie
+            document.cookie = `auth_token=${result.token}; path=/; max-age=86400; Secure; SameSite=Strict`;
+
+            alert(result.message);
+
+            // Redirect to dashboard or home page after successful login
+            window.location.href = "/index.html"; // Replace with the desired redirect URL
+          } else {
+            alert(`Error: ${result.message}`);
+          }
+        } catch (error) {
+          alert("An error occurred: " + error.message);
+        }
+      });
+
+      // Function to retrieve a cookie value by name
+      function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) {
+          return parts.pop().split(";").shift();
+        }
+        return null;
+      }
+    </script>
+  </body>
+</html>

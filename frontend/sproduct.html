@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="top-text">
+                <p>Free shipping, 30 days return or refund guarantee.</p>
+                <div class="sign-in-up">
+                    <a href="#">SIGN IN</a>
+                    <a href="#">SIGN UP</a>
+                </div>
+            </div>
+            <div class="main-nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Book Store Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <a href="cart.html" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="mainBody">
+        <section id="single-pro" class="section">
+            <div class="single-picture">
+                <img id="productImage" src="" alt="Product Image">
+            </div>
+            <div class="single-pro-des">
+                <h1 id="productName"> </h1>
+                <h2 id="productAuthor"></h2>
+                <h3 id="productPrice"></h3>
+                <p id="productDescription"></p>
+                <button class="buttonCart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="homeBack">
+        <a href="index.html">BACK TO HOME</a>
+    </div>
+
+    <footer>
+        <div class="back-to-top">
+            <a href="#top">Back to top</a>
+        </div>
+        <div class="footer-info">
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Investor Relations</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Book Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+    <script src="sproduct.js"></script>
+</body>
+
+</html>
